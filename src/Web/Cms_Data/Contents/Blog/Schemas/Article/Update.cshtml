@@ -1,0 +1,139 @@
+﻿
+@using Kooboo.CMS.Content.Models;
+@using Kooboo.CMS.Content.Query;
+@{
+    var schema = (Kooboo.CMS.Content.Models.Schema)ViewData["Schema"];
+    var allowedEdit = (bool)ViewData["AllowedEdit"];
+    var allowedView = (bool)ViewData["AllowedView"];
+    var workflowItem  = Model._WorkflowItem_;
+    var hasWorkflowItem = workflowItem!=null;
+    var availableEdit = hasWorkflowItem || (!hasWorkflowItem && allowedEdit);
+}
+    @using(Html.BeginForm(ViewContext.RequestContext.AllRouteValues()["action"].ToString()
+            , ViewContext.RequestContext.AllRouteValues()["controller"].ToString()
+            , ViewContext.RequestContext.AllRouteValues()
+            , FormMethod.Post, new RouteValueDictionary(new { enctype = "application/x-www-form-urlencoded" })))
+{
+    <table><tr>
+            <th>
+            <label for="Title">Title</label>
+            </th>
+            <td>
+            <input class='long' id="Title" name="Title" type="text" value="@(Model.Title ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Title"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="UserKey">UserKey</label>
+            </th>
+            <td>
+            <input class='long' id="UserKey" name="UserKey" type="text" value="@(Model.UserKey ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["UserKey"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Summary">Summary</label>
+            </th>
+            <td>
+            <textarea class="extra-large" name="Summary" >@(Model.Summary ?? "")</textarea>             
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Summary"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Content">Content</label>
+            </th>
+            <td>
+            <textarea name="Content" id="Content" class="Content tinymce" media_library_url="@Url.Action("Selection","MediaContent",ViewContext.RequestContext.AllRouteValues()))" media_library_title ="@("Selected Files".Localize())" rows="10" cols="100">@( Model.Content ?? "")</textarea>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Content"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Thumbnail">Thumbnail</label>
+            </th>
+            <td>
+            <div id='Thumbnail_Container' class='mediafile'><input id="Thumbnail" name="Thumbnail" type="hidden" value="@(Model.Thumbnail ?? "")" data-bind="value: fieldValue"/>
+            <ul class="clearfix" data-bind="foreach: data">
+                <!-- ko if: isImage -->
+                <li class="img">
+                    <span class="preview"></span>
+                    <a class="action" data-bind="click: $parent.removeItem">@Html.IconImage("minus small")</a>
+                    <img data-bind="attr:{src:Url}" height="100" width="100">
+                </li>
+                <!-- /ko -->
+                <!-- ko ifnot: isImage -->
+                <li>
+                    <span class="left" data-bind="{text:FileName}"></span>
+                    <a class="action right" data-bind="click: $parent.removeItem">@Html.IconImage("minus small")</a>
+                </li>
+                <!-- /ko -->
+            </ul>
+                <script src="@Kooboo.CMS.Toolkit.Controls.ControlsScript.GetWebResourceUrl()" type="text/javascript" ></script>
+                <a id='addMedia_Thumbnail' columnName='Thumbnail' href='@Url.Action("Selection", ViewContext.RequestContext.AllRouteValues().Merge("Controller", "MediaContent").Merge("FolderName", null).Merge("SingleChoice", "true"))"' class='action add'>@Html.IconImage("plus small")</a>
+                <script type='text/javascript'>
+                    $('#Thumbnail_Container').mediaControl({
+                allowMultipleFiles: false,
+                validation: /.jpg$|.png$|.gif$|.bmp$|.jpeg$/i,
+                validationErrorMessage: 'Please select a valid image',
+                value: '@(Model.Thumbnail)'
+                });
+                </script>
+            </div>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Thumbnail"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Video">Video</label>
+            </th>
+            <td>
+            <div id='Video_Container' class='mediafile'><input id="Video" name="Video" type="hidden" value="@(Model.Video ?? "")" data-bind="value: fieldValue"/>
+            <ul class="clearfix" data-bind="foreach: data">
+                <!-- ko if: isImage -->
+                <li class="img">
+                    <span class="preview"></span>
+                    <a class="action" data-bind="click: $parent.removeItem">@Html.IconImage("minus small")</a>
+                    <img data-bind="attr:{src:Url}" height="100" width="100">
+                </li>
+                <!-- /ko -->
+                <!-- ko ifnot: isImage -->
+                <li>
+                    <span class="left" data-bind="{text:FileName}"></span>
+                    <a class="action right" data-bind="click: $parent.removeItem">@Html.IconImage("minus small")</a>
+                </li>
+                <!-- /ko -->
+            </ul>
+                <script src="@Kooboo.CMS.Toolkit.Controls.ControlsScript.GetWebResourceUrl()" type="text/javascript" ></script>
+                <a id='addMedia_Video' columnName='Video' href='@Url.Action("Selection", ViewContext.RequestContext.AllRouteValues().Merge("Controller", "MediaContent").Merge("FolderName", null).Merge("SingleChoice", "true"))"' class='action add'>@Html.IconImage("plus small")</a>
+                <script type='text/javascript'>
+                    $('#Video_Container').mediaControl({
+                allowMultipleFiles: false,
+                validation: /^.+\..+$/,
+                validationErrorMessage: 'Please select a valid file',
+                value: '@(Model.Video)'
+                });
+                </script>
+            </div>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Video"], null)
+            
+            </td>          
+            </tr>
+            @if (allowedEdit) {
+                <tr>
+            <th>
+           
+            </th>
+            <td>
+            <input id='Published' name="Published" type="checkbox" @(Convert.ToBoolean(Model.Published)?"checked":"") value="true"/>
+                                    <input type="hidden" value="false" name="Published"/>
+            <label class="inline" for="Published">Published</label>
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Published"], null)
+            </td>          
+            </tr>
+            }
+    @Html.Action("Categories", ViewContext.RequestContext.AllRouteValues())
+    </table>   
+}

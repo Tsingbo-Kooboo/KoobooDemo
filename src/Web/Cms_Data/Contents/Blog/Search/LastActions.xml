@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfLastAction xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Kooboo.CMS.Search.Models">
+	<LastAction>
+		<FolderName>Article</FolderName>
+		<ContentSummary>Kooboo CMS升级</ContentSummary>
+		<Action>Update</Action>
+		<UtcActionDate>2014-03-13T12:19:31.8387975Z</UtcActionDate>
+	</LastAction>
+	<LastAction>
+		<FolderName>Article</FolderName>
+		<ContentSummary>Kooboo CMS开发理念</ContentSummary>
+		<Action>Update</Action>
+		<UtcActionDate>2014-03-13T12:19:20.5124368Z</UtcActionDate>
+	</LastAction>
+	<LastAction>
+		<FolderName>Article</FolderName>
+		<ContentSummary>创建你的第一个Kooboo CMS站点</ContentSummary>
+		<Action>Update</Action>
+		<UtcActionDate>2014-03-13T12:19:04.0823082Z</UtcActionDate>
+	</LastAction>
+	<LastAction>
+		<FolderName>Article</FolderName>
+		<ContentSummary>安装Kooboo CMS</ContentSummary>
+		<Action>Update</Action>
+		<UtcActionDate>2014-03-13T12:18:56.0442659Z</UtcActionDate>
+	</LastAction>
+	<LastAction>
+		<FolderName>Article</FolderName>
+		<ContentSummary>Kooboo开发理念</ContentSummary>
+		<Action>Update</Action>
+		<UtcActionDate>2014-03-13T12:18:15.3942017Z</UtcActionDate>
+	</LastAction>
+</ArrayOfLastAction>

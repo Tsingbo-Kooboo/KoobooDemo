@@ -1,0 +1,18 @@
+﻿<ul class="list">
+    @foreach (TextContent item in ViewBag.Article)
+    {
+        var catalogs = String.Join(",", item.Categories("Catalog").Select(it => Html.FrontHtml().PageLink(it["Name"], "Article/Catalog", new { UserKey = it.UserKey }, new { target = "_self" })));
+        <li @ViewHelper.EditItemAttributes(item)>
+            <h3>
+                <small>
+                    [@Html.Raw(catalogs)]
+                </small>
+                <a class='title' href='@Url.FrontUrl().PageUrl("Article/detail",new { UserKey = item.UserKey})' @ViewHelper.Edit(item, "Title")>@item["Title"]</a>
+            </h3>
+            <p>@Html.Raw(item["Summary"] ?? "")</p>
+        </li>
+    }
+</ul>
+<div class="pager">
+    @Html.FrontHtml().Pager(ViewBag.Article)
+</div>

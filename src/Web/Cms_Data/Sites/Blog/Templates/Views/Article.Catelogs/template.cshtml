@@ -1,0 +1,7 @@
+﻿<ul  class="list">
+    @foreach (var item in ViewBag.Catalog){
+    <li  @ViewHelper.EditItemAttributes(item)>
+        <h3><a class='title' href='@Url.FrontUrl().PageUrl("Article/Catalog",new { UserKey = item.UserKey})' @ViewHelper.Edit(item, "Name")>@item.Name</a></h3>
+    </li>
+    }
+</ul>

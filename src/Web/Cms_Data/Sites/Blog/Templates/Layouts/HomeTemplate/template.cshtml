@@ -1,0 +1,28 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    @Html.FrontHtml().HtmlTitle()
+    @Html.FrontHtml().Meta()
+    @Html.FrontHtml().RegisterStyles()
+
+</head>
+<body>
+    <header>
+        @Html.FrontHtml().RenderView("Common.Header", ViewData)
+    </header>
+
+    <div id="content-wrapper">
+        <div class="inner clearfix">
+            <section id="main-content">
+                @Html.FrontHtml().Position("Main")                
+            </section>
+            <aside id="sidebar">
+                @Html.FrontHtml().Position("Sidebar")
+            </aside>
+        </div>
+    </div>
+    <footer>
+        @Html.FrontHtml().RenderView("Common.Footer", ViewData)
+    </footer>
+</body>
+</html>

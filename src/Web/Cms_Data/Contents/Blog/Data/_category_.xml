@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCategory xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Kooboo.CMS.Content.Models">
+	<Category>
+		<CategoryFolder>Catalog</CategoryFolder>
+		<CategoryUUID>5Z92S947Y9HAYJZ9</CategoryUUID>
+		<ContentUUID>HRP2BWWUN5KNQQZW</ContentUUID>
+	</Category>
+	<Category>
+		<CategoryFolder>Catalog</CategoryFolder>
+		<CategoryUUID>5Z92S947Y9HAYJZ9</CategoryUUID>
+		<ContentUUID>MPG2UF247SEUDSVC</ContentUUID>
+	</Category>
+	<Category>
+		<CategoryFolder>Catalog</CategoryFolder>
+		<CategoryUUID>5Z92S947Y9HAYJZ9</CategoryUUID>
+		<ContentUUID>43LJJ3FE5PVH8CQL</ContentUUID>
+	</Category>
+	<Category>
+		<CategoryFolder>Catalog</CategoryFolder>
+		<CategoryUUID>5Z92S947Y9HAYJZ9</CategoryUUID>
+		<ContentUUID>7XY2G922RU3FNTSB</ContentUUID>
+	</Category>
+	<Category>
+		<CategoryFolder>Catalog</CategoryFolder>
+		<CategoryUUID>5Z92S947Y9HAYJZ9</CategoryUUID>
+		<ContentUUID>HY42NDD7MEGZR4NM</ContentUUID>
+	</Category>
+	<Category>
+		<CategoryFolder>Catalog</CategoryFolder>
+		<CategoryUUID>5Z92S947Y9HAYJZ9</CategoryUUID>
+		<ContentUUID>3EUJHPQ3GYMAUF8Z</ContentUUID>
+	</Category>
+</ArrayOfCategory>
