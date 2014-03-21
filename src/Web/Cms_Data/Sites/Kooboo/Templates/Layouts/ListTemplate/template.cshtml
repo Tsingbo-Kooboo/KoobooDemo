@@ -1,0 +1,30 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    @Html.FrontHtml().HtmlTitle()
+    @Html.FrontHtml().Meta()
+    @Html.FrontHtml().RegisterStyles()
+    @Html.FrontHtml().RenderView("Builtin.Header", ViewData)
+</head>
+<body>
+    @Html.FrontHtml().RenderView("Common.Header", ViewData)
+    <div class="container">
+        <div class="blog-header">
+            <h1 class="blog-title">@("Kooboo Blog".Label("SiteName","Common"))</h1>
+            <p class="lead blog-description">风情波涌技术博客</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 blog-main">
+                @Html.FrontHtml().Position("Main")
+        </div><!-- /.blog-main -->
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+            @Html.FrontHtml().Position("Sidebar")
+        </div><!-- /.blog-sidebar -->
+    </div><!-- /.row -->
+</div><!-- /.container -->
+<div class="blog-footer">
+    @Html.FrontHtml().RenderView("Common.Footer", ViewData)
+</div>
+@Html.FrontHtml().RenderView("Builtin.Footer", ViewData)
+</body>
+</html>
