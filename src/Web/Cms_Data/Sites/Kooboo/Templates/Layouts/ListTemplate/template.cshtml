@@ -9,21 +9,24 @@
 <body>
     @Html.FrontHtml().RenderView("Common.Header", ViewData)
     <div class="container">
-        <div class="blog-header">
-           @Html.FrontHtml().RenderView("Common.Banner", ViewData)
-        </div>
+        @if (!Html.FrontHtml().IsEmptyPosition("Banner"))
+        {
+            <div class="blog-header">
+                @Html.FrontHtml().Position("Banner")
+            </div>
+        }
         <div class="row">
             <div class="col-sm-8 blog-main">
                 @Html.FrontHtml().Position("Main")
-        </div><!-- /.blog-main -->
-        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-            @Html.FrontHtml().Position("Sidebar")
-        </div><!-- /.blog-sidebar -->
-    </div><!-- /.row -->
-</div><!-- /.container -->
-<div class="blog-footer">
-    @Html.FrontHtml().RenderView("Common.Footer", ViewData)
-</div>
-@Html.FrontHtml().RenderView("Builtin.Footer", ViewData)
+            </div><!-- /.blog-main -->
+            <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+                @Html.FrontHtml().Position("Sidebar")
+            </div><!-- /.blog-sidebar -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+    <div class="blog-footer">
+        @Html.FrontHtml().RenderView("Common.Footer", ViewData)
+    </div>
+    @Html.FrontHtml().RenderView("Builtin.Footer", ViewData)
 </body>
 </html>
