@@ -20,9 +20,9 @@
             plugins: [
                 "advlist autolink lists link image charmap anchor",
                 "searchreplace visualblocks rawcode fullscreen",
-                "media table contextmenu paste insertPage textcolor pre"
+                "media table contextmenu paste insertPage textcolor"
             ],
-            toolbar: "searchreplace undo redo | bold italic forecolor formatselect | indent outdent | alignleft aligncenter alignright alignjustify | bullist numlist | image link unlink insertPage | rawcode fullscreen pre",
+            toolbar: "searchreplace undo redo | bold italic forecolor formatselect | indent outdent | alignleft aligncenter alignright alignjustify | bullist numlist | image link unlink insertPage | rawcode fullscreen",
             relative_urls: false,
             convert_urls: false,
             verify_html: false,

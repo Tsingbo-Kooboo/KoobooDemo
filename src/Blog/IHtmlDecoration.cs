@@ -30,14 +30,10 @@ namespace Blog
                     {
                         string url = aNode.GetAttributeValue("href", String.Empty).Trim();
                         string urlLower = url.ToLower();
-                        if (urlLower.Equals("/"))
-                        {
-                            url += "Index.html";
-                            aNode.SetAttributeValue("href", url);
-                        }
-                        else if (urlLower.StartsWith("/") &&
+                        if (urlLower.StartsWith("/") &&
                             !urlLower.StartsWith("//") &&
-                            !urlLower.EndsWith(".zip"))
+                            !urlLower.EndsWith(".zip") &&
+                            urlLower != "/")
                         {
                             url += ".html";
                             aNode.SetAttributeValue("href", url);

@@ -2,10 +2,19 @@
   {
     "UUID": "5AKR5V5EFF",
     "Name": "SiteName",
-    "Value": "Kooboo Blog",
+    "Value": "Kooboo CMS",
     "Category": "Common",
     "UtcCreationDate": "2014-03-21T03:51:40.3577597Z",
-    "UtcLastestModificationDate": null,
+    "UtcLastestModificationDate": "2014-03-21T13:45:45.7692276Z",
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "8PK5LJV7AZ",
+    "Name": "SiteDescription",
+    "Value": "基于ASP.NET MVC的开源内容管理系统",
+    "Category": "Common",
+    "UtcCreationDate": "2014-03-21T13:44:28.9493225Z",
+    "UtcLastestModificationDate": "2014-03-21T13:46:26.2622287Z",
     "LastestEditor": "admin"
   }
 ]

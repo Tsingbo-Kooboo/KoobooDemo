@@ -1,18 +1,23 @@
 ﻿@{
     var dir = Path.Combine(Site.Current.PhysicalPath, "Files", "packages");
-    var files = Directory.GetFiles(dir, "*.zip").Select(Path.GetFileNameWithoutExtension);
+    if (Directory.Exists(dir))
+    {
+        var files = Directory.GetFiles(dir, "*.zip").Select(Path.GetFileNameWithoutExtension);
+
+        <div class="btn-group" id="download">
+            <button class="btn btn-success btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
+                下载最新版本<span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                @foreach (var item in files)
+                {
+                    <li><a href="@Url.FrontUrl().FileUrl(String.Format("packages/{0}.zip",item))">@item</a></li>
+                }
+            </ul>
+        </div>
+    }
 }
-<div class="btn-group" id="download">
-    <button class="btn btn-success btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
-        下载最新版本<span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu">
-        @foreach (var item in files)
-        {
-            <li><a href="@Url.FrontUrl().FileUrl(String.Format("packages/{0}.zip",item))">@item</a></li>
-        }
-    </ul>
-</div>
+
 <div class="sidebar-module sidebar-module-inset">
     <h4>About</h4>
 

@@ -10,8 +10,7 @@
     @Html.FrontHtml().RenderView("Common.Header", ViewData)
     <div class="container">
         <div class="blog-header">
-            <h1 class="blog-title">@("Kooboo Blog".Label("SiteName","Common"))</h1>
-            <p class="lead blog-description">风情波涌技术博客</p>
+           @Html.FrontHtml().RenderView("Common.Banner", ViewData)
         </div>
         <div class="row">
             <div class="col-sm-8 blog-main">
