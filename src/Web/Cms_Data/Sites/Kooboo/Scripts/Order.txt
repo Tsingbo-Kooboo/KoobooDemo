@@ -1,4 +1,8 @@
+jquery-1.11.0.min.js
 bootstrap.min.js
+responsive-nav.min.js
 ie8-responsive-file-warning.js
 docs.min.js
+jquery.pin.js
+unslider.js
 app.js

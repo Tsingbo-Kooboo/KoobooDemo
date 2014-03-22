@@ -1,2 +1,31 @@
-﻿<h1 class="blog-title">@("Kooboo CMS".Label("SiteName", "Common"))</h1>
-<p class="lead blog-description">@("基于ASP.NET MVC的开源内容管理系统".Label("SiteDescription", "Common"))</p>
+﻿<div class="blog-header">
+    <div class="">
+        <div class="container banner-wrap">
+            <div class="pull-left">
+                <div class="panel well-lg">
+                    <h1 class="blog-title">@("Kooboo CMS".Label("SiteName", "Common"))</h1>
+                    <p class="lead blog-description">@("基于ASP.NET MVC的开源内容管理系统".Label("SiteDescription", "Common"))</p>
+                </div>
+                <div class="well-lg">
+                    <div class="btn-group">
+                        <a href="https://github.com/Kooboo/CMS" target="_blank" class="btn btn-lg btn-primary">查看源码</a>
+                        <a href="javascript:;" class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown">
+                            立即下载 <span class="caret"></span>
+                        </a>
+                        @Html.FrontHtml().RenderView("Builtin.Downloads", ViewData)
+                    </div>
+                </div>
+            </div>
+            <div class="banner pull-right">
+                <ul>
+                    <li>
+                        <img src="@Url.FrontUrl().MediaContentUrl("Home","Backend.png")" width="458" height="275" alt="Alternate Text" />
+                    </li>
+                    <li>
+                        <img src="@Url.FrontUrl().MediaContentUrl("Home","FrontEnd.png")" width="458" height="275" alt="Alternate Text" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

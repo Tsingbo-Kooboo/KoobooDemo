@@ -1,3 +1,100 @@
-﻿.logo {
+﻿/*
+[Contents]
+
+	0- Global
+	1- Header
+	2- Main Container
+	3- Main
+	4- Sidebar
+	5- Footer
+*/
+
+/* =0 Global
+---------------------------------------------------------------------------------------------------------------------*/
+body {
+    position: relative;
+}
+/* =1 Header
+---------------------------------------------------------------------------------------------------------------------*/
+.logo {
     margin-top: 5px;
 }
+
+/* =2 Main Container
+---------------------------------------------------------------------------------------------------------------------*/
+.blog-nav-item > a {
+    color: #ccc;
+}
+
+.blog-nav-item a:hover,
+.blog-nav-item a:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.blog-nav a.active {
+    color: #fff;
+}
+
+.blog-header {
+    background: url(images/banner_bg.png) no-repeat center center;
+    height: 425px;
+    margin-bottom: 20px;
+}
+
+.banner-wrap {
+    padding-top: 58px;
+}
+
+.banner {
+    width: 458px;
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+    .banner ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .banner li {
+        list-style: none;
+        width: 458px;
+        height: 275px;
+        float: left;
+        padding: 0;
+        margin: 0;
+    }
+
+
+/* =3 Main
+---------------------------------------------------------------------------------------------------------------------*/
+
+article {
+    margin-top: 30px;
+}
+
+/* =4 Sidebar
+---------------------------------------------------------------------------------------------------------------------*/
+.blog-sidebar .affix,
+.blog-sidebar .affix-top,
+.blog-sidebar .affix-bottom {
+    width: 240px;
+}
+
+.blog-sidebar .affix-top {
+    position: relative !important;
+}
+
+.blog-sidebar .affix-bottom {
+    bottom: 50px;
+    position: absolute;
+}
+
+.blog-sidebar .affix {
+    top: 60px;
+}
+
+/* =5 Footer
+---------------------------------------------------------------------------------------------------------------------*/

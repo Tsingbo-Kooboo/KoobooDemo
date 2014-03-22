@@ -1,20 +1,24 @@
-﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     @Html.FrontHtml().HtmlTitle()
     @Html.FrontHtml().Meta()
-    @Html.FrontHtml().RegisterStyles()
     @Html.FrontHtml().RenderView("Builtin.Header", ViewData)
 </head>
 <body>
     @Html.FrontHtml().RenderView("Common.Header", ViewData)
+    @if (!Html.FrontHtml().IsEmptyPosition("Banner"))
+    {
+        @Html.FrontHtml().Position("Banner")
+    }
+    @if (!Html.FrontHtml().IsEmptyPosition("BreadCrumb"))
+    {
+        <div class="container">
+            @Html.FrontHtml().Position("BreadCrumb")
+        </div>
+    }
     <div class="container">
-        @if (!Html.FrontHtml().IsEmptyPosition("Banner"))
-        {
-            <div class="blog-header">
-                @Html.FrontHtml().Position("Banner")
-            </div>
-        }
         <div class="row">
             <div class="col-sm-8 blog-main">
                 @Html.FrontHtml().Position("Main")

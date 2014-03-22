@@ -1,0 +1,7 @@
+﻿<ul class="breadcrumb">
+    @foreach (var item in MenuHelper.Breadcrumb())
+    {
+        <li>@Html.FrontHtml().PageLink(item.LinkText, item.FullName)</li>
+    }
+    <li>@(Page_Context.Current.ContentTitle ?? MenuHelper.Current().LinkText)</li>
+</ul>

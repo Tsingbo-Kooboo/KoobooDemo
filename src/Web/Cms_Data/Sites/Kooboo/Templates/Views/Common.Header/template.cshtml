@@ -1,11 +1,30 @@
-﻿<div class="blog-masthead navbar navbar-fixed-top">
-    <div class="container">
-        <a href="@Url.FrontUrl().PageUrl("Home")" class="pull-left logo"><img src="@Url.FrontUrl().FileUrl("logo.png")" alt="@("Kooboo Blog".RawLabel("SiteName","Common"))" /></a>
-        <nav class="blog-nav pull-right">
-            @foreach (var item in MenuHelper.Top().Where(it => it.Navigation.Show))
-            {
-                @Html.FrontHtml().PageLink(item.LinkText, item.FullName, null, new { @class = MenuHelper.IsCurrent(item) ? "blog-nav-item active" : "blog-nav-item" })
-            }
-        </nav>
+﻿@if (Page_Context.Current.PageRequestContext.RequestChannel != Kooboo.CMS.Sites.Web.FrontRequestChannel.Design)
+{
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="@Url.FrontUrl().PageUrl("Articles")" class="pull-left logo"><img src="@Url.FrontUrl().FileUrl("logo.png")" alt="@("Kooboo Blog".RawLabel("SiteName","Common"))" /></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    @foreach (var item in MenuHelper.Top().Where(it => it.Navigation.Show))
+                    {
+                        <li @(MenuHelper.IsCurrent(item) ? "class=active" : "")>
+                            @Html.FrontHtml().PageLink(item.LinkText, item.FullName)
+                        </li>
+                    }
+                    <li class="dropdown">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">立即下载<b class="caret"></b></a>
+                        @Html.FrontHtml().RenderView("Builtin.Downloads", ViewData)
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
     </div>
-</div>
+} 

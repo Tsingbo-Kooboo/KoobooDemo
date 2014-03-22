@@ -4,7 +4,6 @@
     <title>首页</title>
     
     <link type="text/css" rel="stylesheet" href="/Cms_Data/Sites/Kooboo/Themes/Default/bootstrap.min.css">
-<link type="text/css" rel="stylesheet" href="/Cms_Data/Sites/Kooboo/Themes/Default/navbar-fixed-top.css">
 <link type="text/css" rel="stylesheet" href="/Cms_Data/Sites/Kooboo/Themes/Default/blog.css">
 <link type="text/css" rel="stylesheet" href="/Cms_Data/Sites/Kooboo/Themes/Default/kooboo.css">
 <script src="/Scripts/less.js" type="text/javascript"></script>
@@ -18,19 +17,88 @@
 
 </head>
 <body>
-    <div class="blog-masthead navbar navbar-fixed-top">
+    
+<div class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-        <a href="/" class="pull-left logo"><img src="/Cms_Data/Sites/Kooboo/Files/logo.png" alt="Kooboo CMS"></a>
-        <nav class="blog-nav pull-right">
-<a class="blog-nav-item active" href="/" target="">首页</a><a class="blog-nav-item" href="/NewFeatures.html" target="">新功能</a><a class="blog-nav-item" href="https://github.com/Kooboo/CMS" target="_blank">源码下载</a>        </nav>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="pull-left logo"><img src="/Cms_Data/Sites/Kooboo/Files/logo.png" alt="Kooboo CMS"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                    <li class="&quot;active&quot;">
+                        <a href="/" target="">首页</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Kooboo/CMS" target="_blank">源码下载</a>
+                    </li>
+                <li class="dropdown">
+                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">立即下载<b class="caret"></b></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="/Cms_Data/Sites/Kooboo/Files/packages/Kooboo_CMS.zip">Kooboo_CMS</a></li>
+                        <li><a href="/Cms_Data/Sites/Kooboo/Files/packages/Kooboo_CMS_Azure.zip">Kooboo_CMS_Azure</a></li>
+                        <li class="divider"></li>
+                        <li><a href="/Cms_Data/Sites/Kooboo/Files/packages/Content_Providers.zip">Content_Providers</a></li>
+                        <li><a href="/Cms_Data/Sites/Kooboo/Files/packages/Account_Providers.zip">Account_Providers</a></li>
+                        <li><a href="/Cms_Data/Sites/Kooboo/Files/packages/Membership_Providers.zip">Membership_Providers</a></li>
+                        <li><a href="/Cms_Data/Sites/Kooboo/Files/packages/Site_Providers.zip">Site_Providers</a></li>
+                        <li class="divider"></li>
+                        <li><a href="/Cms_Data/Sites/Kooboo/Files/packages/FileServer_Web.zip">FileServer_Web</a></li>
+                        <li><a href="/Cms_Data/Sites/Kooboo/Files/packages/Caching_Sync.zip">Caching_Sync</a></li>
+                        <li><a href="/Cms_Data/Sites/Kooboo/Files/packages/Template_Engines.zip">Template_Engines</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!--/.nav-collapse -->
     </div>
 </div>
+<div class="blog-header">
+    <div class="">
+        <div class="container banner-wrap">
+            <div class="pull-left">
+                <div class="panel">
+                    <h1 class="blog-title">Kooboo CMS</h1>
+                    <p class="lead blog-description">基于ASP.NET MVC的开源内容管理系统</p>
+                </div>
+                <div class="btn-group">
+                    <a href="https://github.com/Kooboo/CMS" target="_blank" class="btn btn-lg btn-primary">查看源码</a>
+                    <a href="javascript:;" class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown">
+                        立即下载 <span class="caret"></span>
+                    </a>
+                      <ul class="dropdown-menu">
+                        <li><a href="/Cms_Data/Sites/Kooboo/Files/packages/Kooboo_CMS.zip">Kooboo_CMS</a></li>
+                        <li><a href="/Cms_Data/Sites/Kooboo/Files/packages/Kooboo_CMS_Azure.zip">Kooboo_CMS_Azure</a></li>
+                        <li class="divider"></li>
+                        <li><a href="/Cms_Data/Sites/Kooboo/Files/packages/Content_Providers.zip">Content_Providers</a></li>
+                        <li><a href="/Cms_Data/Sites/Kooboo/Files/packages/Account_Providers.zip">Account_Providers</a></li>
+                        <li><a href="/Cms_Data/Sites/Kooboo/Files/packages/Membership_Providers.zip">Membership_Providers</a></li>
+                        <li><a href="/Cms_Data/Sites/Kooboo/Files/packages/Site_Providers.zip">Site_Providers</a></li>
+                        <li class="divider"></li>
+                        <li><a href="/Cms_Data/Sites/Kooboo/Files/packages/FileServer_Web.zip">FileServer_Web</a></li>
+                        <li><a href="/Cms_Data/Sites/Kooboo/Files/packages/Caching_Sync.zip">Caching_Sync</a></li>
+                        <li><a href="/Cms_Data/Sites/Kooboo/Files/packages/Template_Engines.zip">Template_Engines</a></li>
+                    </ul>
+                </div>
 
-    <div class="container">
-            <div class="blog-header">
-                <h1 class="blog-title">Kooboo CMS</h1>
-<p class="lead blog-description">基于ASP.NET MVC的开源内容管理系统</p><p><img src="/Cms_Data/Contents/Blog/Media/Home/Thumbnail.png" alt="Thumbnail.png" height="628" width="940"></p>
             </div>
+            <div class="banner pull-right">
+                <ul>
+                    <li>
+                        <img src="/Cms_Data/Contents/Blog/Media/Home/Backend.png" width="458" height="275" alt="Alternate Text">
+                    </li>
+                    <li>
+                        <img src="/Cms_Data/Contents/Blog/Media/Home/FrontEnd.png" width="458" height="275" alt="Alternate Text">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>    <div class="container">
         <div class="row">
             <div class="col-sm-8 blog-main">
                 <div class="blog-post">
@@ -111,14 +179,7 @@
             </div><!-- /.blog-main -->
             <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
                 
-
-<div class="sidebar-module sidebar-module-inset">
-    <h4>About</h4>
-
-    <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-</div>
-
-<div class="sidebar-module">
+<div class="sidebar-module sidebar-module-inset" id="catalog">
     <h4>Archives</h4>
     <ol class="list-unstyled">
         <li><a href="#">March 2014</a></li>
@@ -135,14 +196,7 @@
         <li><a href="#">April 2013</a></li>
     </ol>
 </div>
-<div class="sidebar-module">
-    <h4>Elsewhere</h4>
-    <ol class="list-unstyled">
-        <li><a href="#">GitHub</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Facebook</a></li>
-    </ol>
-</div>
+
             </div><!-- /.blog-sidebar -->
         </div><!-- /.row -->
     </div><!-- /.container -->
@@ -157,6 +211,9 @@
 <script type="text/javascript" src="/Cms_Data/Sites/Kooboo/Scripts/ie8-responsive-file-warning.js"></script>
 <script type="text/javascript" src="/Cms_Data/Sites/Kooboo/Scripts/docs.min.js"></script>
 <script type="text/javascript" src="/Cms_Data/Sites/Kooboo/Scripts/app.js"></script>
+<script type="text/javascript" src="/Cms_Data/Sites/Kooboo/Scripts/jquery.pin.js"></script>
+<script type="text/javascript" src="/Cms_Data/Sites/Kooboo/Scripts/responsive-nav.min.js"></script>
+<script type="text/javascript" src="/Cms_Data/Sites/Kooboo/Scripts/unslider.js"></script>
 
 </body>
 </html>

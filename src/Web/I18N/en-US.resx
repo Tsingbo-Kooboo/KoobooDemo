@@ -1039,4 +1039,259 @@
   <data name="Publish" xml:space="preserve">
     <value>Publish</value>
   </data>
+  <data name="Sign in" xml:space="preserve">
+    <value>Sign in</value>
+  </data>
+  <data name="The Remember me field is required." xml:space="preserve">
+    <value>The Remember me field is required.</value>
+  </data>
+  <data name="Remember me" xml:space="preserve">
+    <value>Remember me</value>
+  </data>
+  <data name="The Redirect to home page field is required." xml:space="preserve">
+    <value>The Redirect to home page field is required.</value>
+  </data>
+  <data name="Redirect to home page" xml:space="preserve">
+    <value>Redirect to home page</value>
+  </data>
+  <data name="Forgot password?" xml:space="preserve">
+    <value>Forgot password?</value>
+  </data>
+  <data name="Back to home page" xml:space="preserve">
+    <value>Back to home page</value>
+  </data>
+  <data name="About kooboo CMS" xml:space="preserve">
+    <value>About kooboo CMS</value>
+  </data>
+  <data name="This Enterprise CMS system saves time and allows you the freedom that you need to develop high-quality websites with a personal touch. We've streamlined the web development process." xml:space="preserve">
+    <value>This Enterprise CMS system saves time and allows you the freedom that you need to develop high-quality websites with a personal touch. We've streamlined the web development process.</value>
+  </data>
+  <data name="For a list of newly added features and a quick start guide,&lt;br /&gt;See: &lt;a href=&quot;http://www.kooboo.com/documents&quot; target=&quot;_blank&quot;&gt;http://www.kooboo.com/documents&lt;/a&gt;" xml:space="preserve">
+    <value>For a list of newly added features and a quick start guide,&lt;br /&gt;See: &lt;a href="http://www.kooboo.com/documents" target="_blank"&gt;http://www.kooboo.com/documents&lt;/a&gt;</value>
+  </data>
+  <data name="Sign in to the CMS and create your first Kooboo website, the default login is: &lt;strong&gt;admin/admin&lt;/strong&gt;" xml:space="preserve">
+    <value>Sign in to the CMS and create your first Kooboo website, the default login is: &lt;strong&gt;admin/admin&lt;/strong&gt;</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>Security</value>
+  </data>
+  <data name="Select a membership data source for the site." xml:space="preserve">
+    <value>Select a membership data source for the site.</value>
+  </data>
+  <data name="Membership" xml:space="preserve">
+    <value>Membership</value>
+  </data>
+  <data name="Used to create sites for special devices only, you can define regex expression to match the Browser User-Agent.&lt;br /&gt;Only matched devices are allowed to view this site." xml:space="preserve">
+    <value>Used to create sites for special devices only, you can define regex expression to match the Browser User-Agent.&lt;br /&gt;Only matched devices are allowed to view this site.</value>
+  </data>
+  <data name="Example:" xml:space="preserve">
+    <value>Example:</value>
+  </data>
+  <data name="Mobiles" xml:space="preserve">
+    <value>Mobiles</value>
+  </data>
+  <data name="Android" xml:space="preserve">
+    <value>Android</value>
+  </data>
+  <data name="iPhone" xml:space="preserve">
+    <value>iPhone</value>
+  </data>
+  <data name="iPad" xml:space="preserve">
+    <value>iPad</value>
+  </data>
+  <data name="IE" xml:space="preserve">
+    <value>IE</value>
+  </data>
+  <data name="Firefox" xml:space="preserve">
+    <value>Firefox</value>
+  </data>
+  <data name="Chrome" xml:space="preserve">
+    <value>Chrome</value>
+  </data>
+  <data name="Safari/Windows" xml:space="preserve">
+    <value>Safari/Windows</value>
+  </data>
+  <data name="Safari/Mac" xml:space="preserve">
+    <value>Safari/Mac</value>
+  </data>
+  <data name="Device" xml:space="preserve">
+    <value>Device</value>
+  </data>
+  <data name="Alternate SSL detection via HTTP header, please fill in http header name and value. &lt;a href='https://github.com/plack/Plack/wiki/How-to-detect-reverse-proxy-and-SSL-frontend' target='_blank'&gt;Click&lt;/a&gt; for more." xml:space="preserve">
+    <value>Alternate SSL detection via HTTP header, please fill in http header name and value. &lt;a href='https://github.com/plack/Plack/wiki/How-to-detect-reverse-proxy-and-SSL-frontend' target='_blank'&gt;Click&lt;/a&gt; for more.</value>
+  </data>
+  <data name="Alternate SSL detection" xml:space="preserve">
+    <value>Alternate SSL detection</value>
+  </data>
+  <data name="The field Encrypt key must be a string with a minimum length of 8 and a maximum length of 8." xml:space="preserve">
+    <value>The field Encrypt key must be a string with a minimum length of 8 and a maximum length of 8.</value>
+  </data>
+  <data name="The encrypt key for SecurityHelper.Encrypt/Decrypt." xml:space="preserve">
+    <value>The encrypt key for SecurityHelper.Encrypt/Decrypt.</value>
+  </data>
+  <data name="Encrypt key" xml:space="preserve">
+    <value>Encrypt key</value>
+  </data>
+  <data name="The Turn on submission api field is required." xml:space="preserve">
+    <value>The Turn on submission api field is required.</value>
+  </data>
+  <data name="Turn on submission api" xml:space="preserve">
+    <value>Turn on submission api</value>
+  </data>
+  <data name=" Turn on/off the content submission API such as ContentService and SendEmail API. The 'ContentService' was obsolete in 4.1 verion, it is recommended to trun off for security reason." xml:space="preserve">
+    <value> Turn on/off the content submission API such as ContentService and SendEmail API. The 'ContentService' was obsolete in 4.1 verion, it is recommended to trun off for security reason.</value>
+  </data>
+  <data name="Test SMTP" xml:space="preserve">
+    <value>Test SMTP</value>
+  </data>
+  <data name="Site setting has been changed." xml:space="preserve">
+    <value>Site setting has been changed.</value>
+  </data>
+  <data name="Html code" xml:space="preserve">
+    <value>Html code</value>
+  </data>
+  <data name="Html With Inline editing" xml:space="preserve">
+    <value>Html With Inline editing</value>
+  </data>
+  <data name="DataType" xml:space="preserve">
+    <value>DataType</value>
+  </data>
+  <data name="Default Value" xml:space="preserve">
+    <value>Default Value</value>
+  </data>
+  <data name="Plugins" xml:space="preserve">
+    <value>Plugins</value>
+  </data>
+  <data name="Code helper" xml:space="preserve">
+    <value>Code helper</value>
+  </data>
+  <data name="Position Name" xml:space="preserve">
+    <value>Position Name</value>
+  </data>
+  <data name="Please input a new position name." xml:space="preserve">
+    <value>Please input a new position name.</value>
+  </data>
+  <data name="Please input another name ." xml:space="preserve">
+    <value>Please input another name .</value>
+  </data>
+  <data name="Please choose another position" xml:space="preserve">
+    <value>Please choose another position</value>
+  </data>
+  <data name="Edit DataRule" xml:space="preserve">
+    <value>Edit DataRule</value>
+  </data>
+  <data name="This item already exists." xml:space="preserve">
+    <value>This item already exists.</value>
+  </data>
+  <data name="-" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="YES" xml:space="preserve">
+    <value>YES</value>
+  </data>
+  <data name="New view" xml:space="preserve">
+    <value>New view</value>
+  </data>
+  <data name="Copy view" xml:space="preserve">
+    <value>Copy view</value>
+  </data>
+  <data name="'Destination name' is invalid." xml:space="preserve">
+    <value>'Destination name' is invalid.</value>
+  </data>
+  <data name="Destination name" xml:space="preserve">
+    <value>Destination name</value>
+  </data>
+  <data name="Template" xml:space="preserve">
+    <value>Template</value>
+  </data>
+  <data name="Are you sure you want to reset these templates?" xml:space="preserve">
+    <value>Are you sure you want to reset these templates?</value>
+  </data>
+  <data name="Reset templates" xml:space="preserve">
+    <value>Reset templates</value>
+  </data>
+  <data name="Grid" xml:space="preserve">
+    <value>Grid</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="Selectable" xml:space="preserve">
+    <value>Selectable</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="Detail" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="Copy content type" xml:space="preserve">
+    <value>Copy content type</value>
+  </data>
+  <data name="Advanced search" xml:space="preserve">
+    <value>Advanced search</value>
+  </data>
+  <data name="Add content" xml:space="preserve">
+    <value>Add content</value>
+  </data>
+  <data name="New folder" xml:space="preserve">
+    <value>New folder</value>
+  </data>
+  <data name="Re-broadcast" xml:space="preserve">
+    <value>Re-broadcast</value>
+  </data>
+  <data name="New page" xml:space="preserve">
+    <value>New page</value>
+  </data>
+  <data name="This new page" xml:space="preserve">
+    <value>This new page</value>
+  </data>
+  <data name="Save &amp; publish" xml:space="preserve">
+    <value>Save &amp; publish</value>
+  </data>
+  <data name="Move page" xml:space="preserve">
+    <value>Move page</value>
+  </data>
+  <data name="Parent page" xml:space="preserve">
+    <value>Parent page</value>
+  </data>
+  <data name="The Create automatic redirect field is required." xml:space="preserve">
+    <value>The Create automatic redirect field is required.</value>
+  </data>
+  <data name="Create automatic redirect" xml:space="preserve">
+    <value>Create automatic redirect</value>
+  </data>
+  <data name="Text content" xml:space="preserve">
+    <value>Text content</value>
+  </data>
+  <data name="Edit a content" xml:space="preserve">
+    <value>Edit a content</value>
+  </data>
+  <data name="Path" xml:space="preserve">
+    <value>Path</value>
+  </data>
+  <data name="The name already exists." xml:space="preserve">
+    <value>The name already exists.</value>
+  </data>
+  <data name="New file" xml:space="preserve">
+    <value>New file</value>
+  </data>
+  <data name="Rename" xml:space="preserve">
+    <value>Rename</value>
+  </data>
+  <data name="Copy page" xml:space="preserve">
+    <value>Copy page</value>
+  </data>
+  <data name="Plese set the default route values for the page &quot;{0}&quot;." xml:space="preserve">
+    <value>Plese set the default route values for the page "{0}".</value>
+  </data>
+  <data name="Show view relations" xml:space="preserve">
+    <value>Show view relations</value>
+  </data>
+  <data name="Used in" xml:space="preserve">
+    <value>Used in</value>
+  </data>
+  <data name="Usage" xml:space="preserve">
+    <value>Usage</value>
+  </data>
 </root>
